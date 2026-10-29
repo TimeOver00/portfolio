@@ -53,6 +53,15 @@ export const education = [
 export const projects = [
   {
     tag: 'Projet personnel',
+    title: 'Coffee Weather',
+    description:
+      "Application météo qui indique si c'est une bonne journée pour un café en terrasse : API FastAPI (async, appel à l'API OpenWeatherMap) et front React/TypeScript animé avec Framer Motion, dont le fond réagit en temps réel à la météo et à l'heure du jour (soleil, lune, pluie, neige, orage).",
+    stack: ['FastAPI', 'Python', 'httpx', 'React', 'TypeScript', 'Framer Motion', 'Vite'],
+    link: 'https://github.com/TimeOver00/coffee-weather',
+    image: 'coffee-weather.jpg',
+  },
+  {
+    tag: 'Projet personnel',
     title: 'MyLoLTracker',
     description:
       "Application web de suivi de joueurs League of Legends : API ASP.NET Core 8 au-dessus de l'API Riot Games (cache mémoire, gestion d'erreurs en ProblemDetails, tests xUnit) et front Angular affichant profil, classement et derniers matchs. Image Docker multi-étapes et pipeline GitHub Actions (tests, build du front, build de l'image).",
@@ -99,6 +108,9 @@ export const skills = [
       'JavaScript',
       'PHP (Lumen)',
       'SQL',
+      'Python',
+      'FastAPI',
+      'React',
     ],
   },
   {
