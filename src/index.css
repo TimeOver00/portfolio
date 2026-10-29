@@ -326,6 +326,47 @@ section:last-of-type {
   color: var(--ink-soft);
   font-size: 0.92rem;
 }
+.card-body {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  flex: 1;
+}
+.featured {
+  grid-column: 1 / -1;
+}
+.card.has-shot {
+  flex-direction: row;
+  align-items: stretch;
+  gap: 24px;
+}
+.card .shot {
+  width: 42%;
+  min-height: 220px;
+  object-fit: cover;
+  object-position: top;
+  border-radius: 8px;
+  border: 1px solid var(--line);
+}
+@media (max-width: 640px) {
+  .card.has-shot {
+    flex-direction: column;
+  }
+  .card .shot {
+    width: 100%;
+    min-height: 0;
+    aspect-ratio: 16 / 10;
+  }
+}
+.card-link {
+  font-family: 'IBM Plex Mono', monospace;
+  font-size: 0.78rem;
+  color: var(--accent);
+  text-decoration: none;
+}
+.card-link:hover {
+  text-decoration: underline;
+}
 .stack {
   display: flex;
   flex-wrap: wrap;
