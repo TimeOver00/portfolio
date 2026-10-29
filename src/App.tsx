@@ -1,4 +1,5 @@
 import ThemeToggle from './components/ThemeToggle'
+import ScrollProgress from './components/ScrollProgress'
 import Hero from './components/Hero'
 import About from './components/About'
 import Experience from './components/Experience'
@@ -11,6 +12,7 @@ import Footer from './components/Footer'
 function App() {
   return (
     <>
+      <ScrollProgress />
       <ThemeToggle />
       <div className="wrap">
         <Hero />

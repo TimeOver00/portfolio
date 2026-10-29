@@ -1,4 +1,5 @@
 import Reveal from './Reveal'
+import { StaggerGroup, StaggerItem } from './StaggerGroup'
 import { languages, interests } from '../data'
 
 export default function LanguagesInterests() {
@@ -17,11 +18,11 @@ export default function LanguagesInterests() {
           </div>
           <div>
             <h3>Centres d'intérêt</h3>
-            <div className="interests">
+            <StaggerGroup className="interests">
               {interests.map((item) => (
-                <span key={item}>{item}</span>
+                <StaggerItem key={item}>{item}</StaggerItem>
               ))}
-            </div>
+            </StaggerGroup>
           </div>
         </div>
       </Reveal>

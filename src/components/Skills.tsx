@@ -1,4 +1,5 @@
 import Reveal from './Reveal'
+import { StaggerGroup, StaggerItem } from './StaggerGroup'
 import { skills } from '../data'
 
 export default function Skills() {
@@ -12,11 +13,11 @@ export default function Skills() {
         <Reveal key={group.label} delay={i * 0.08}>
           <div className="skill-group">
             <div className="label">{group.label}</div>
-            <div className="tags">
+            <StaggerGroup className="tags">
               {group.items.map((item) => (
-                <span key={item}>{item}</span>
+                <StaggerItem key={item}>{item}</StaggerItem>
               ))}
-            </div>
+            </StaggerGroup>
           </div>
         </Reveal>
       ))}

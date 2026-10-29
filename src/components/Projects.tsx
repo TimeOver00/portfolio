@@ -1,4 +1,5 @@
 import Reveal from './Reveal'
+import { StaggerGroup, StaggerItem } from './StaggerGroup'
 import { projects } from '../data'
 
 export default function Projects() {
@@ -24,11 +25,11 @@ export default function Projects() {
                 <div className="tag">{p.tag}</div>
                 <h3>{p.title}</h3>
                 <p>{p.description}</p>
-                <div className="stack">
+                <StaggerGroup className="stack">
                   {p.stack.map((s) => (
-                    <span key={s}>{s}</span>
+                    <StaggerItem key={s}>{s}</StaggerItem>
                   ))}
-                </div>
+                </StaggerGroup>
                 {p.link && (
                   <a className="card-link" href={p.link} target="_blank" rel="noreferrer">
                     Voir le code sur GitHub →
