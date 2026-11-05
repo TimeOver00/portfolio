@@ -4,7 +4,7 @@ import { languages, interests } from '../data'
 
 export default function LanguagesInterests() {
   return (
-    <section>
+    <section className="plain">
       <Reveal>
         <div className="duo">
           <div>
